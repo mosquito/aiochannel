@@ -123,6 +123,20 @@ which is functionally equivalent to
 Noteworthy changes
 ~~~~~~~~~~~~~~~~~~
 
+1.2.0
+^^^^^
+
+Added typing support with generics. Now you can specify the type
+explicitly, your IDE or mypy will follow this annotations.
+
+
+.. code-block:: python
+
+    from aiochannel import Channel
+
+    channel: Channel[str] = Channel(100)
+
+
 0.2.0
 ^^^^^
 
